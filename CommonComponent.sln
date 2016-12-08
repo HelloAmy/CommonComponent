@@ -1,0 +1,34 @@
+﻿
+Microsoft Visual Studio Solution File, Format Version 12.00
+# Visual Studio 2013
+VisualStudioVersion = 12.0.21005.1
+MinimumVisualStudioVersion = 10.0.40219.1
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Component.Butterfly.KeyGenerator", "Component.Butterfly.KeyGenerator\Component.Butterfly.KeyGenerator.csproj", "{AE9510CE-FD62-4526-B5F0-CCC6D4833214}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Component.Butterfly.HttpHelper", "Component.Butterfly.HttpHelper\Component.Butterfly.HttpHelper.csproj", "{8AAB12D2-43AF-439C-93E1-568D0D43E458}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Component.Buttlerfly.Logger", "Component.Buttlerfly.Logger\Component.Buttlerfly.Logger.csproj", "{50BAB7CA-2966-419A-8BEB-AB226141EAE4}"
+EndProject
+Global
+	GlobalSection(SolutionConfigurationPlatforms) = preSolution
+		Debug|Any CPU = Debug|Any CPU
+		Release|Any CPU = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(ProjectConfigurationPlatforms) = postSolution
+		{AE9510CE-FD62-4526-B5F0-CCC6D4833214}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{AE9510CE-FD62-4526-B5F0-CCC6D4833214}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{AE9510CE-FD62-4526-B5F0-CCC6D4833214}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{AE9510CE-FD62-4526-B5F0-CCC6D4833214}.Release|Any CPU.Build.0 = Release|Any CPU
+		{8AAB12D2-43AF-439C-93E1-568D0D43E458}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{8AAB12D2-43AF-439C-93E1-568D0D43E458}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{8AAB12D2-43AF-439C-93E1-568D0D43E458}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{8AAB12D2-43AF-439C-93E1-568D0D43E458}.Release|Any CPU.Build.0 = Release|Any CPU
+		{50BAB7CA-2966-419A-8BEB-AB226141EAE4}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{50BAB7CA-2966-419A-8BEB-AB226141EAE4}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{50BAB7CA-2966-419A-8BEB-AB226141EAE4}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{50BAB7CA-2966-419A-8BEB-AB226141EAE4}.Release|Any CPU.Build.0 = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(SolutionProperties) = preSolution
+		HideSolutionNode = FALSE
+	EndGlobalSection
+EndGlobal

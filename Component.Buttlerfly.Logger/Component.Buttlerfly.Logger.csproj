@@ -1,0 +1,84 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project ToolsVersion="12.0" DefaultTargets="Build" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <Import Project="$(MSBuildExtensionsPath)\$(MSBuildToolsVersion)\Microsoft.Common.props" Condition="Exists('$(MSBuildExtensionsPath)\$(MSBuildToolsVersion)\Microsoft.Common.props')" />
+  <PropertyGroup>
+    <Configuration Condition=" '$(Configuration)' == '' ">Debug</Configuration>
+    <Platform Condition=" '$(Platform)' == '' ">AnyCPU</Platform>
+    <ProjectGuid>{50BAB7CA-2966-419A-8BEB-AB226141EAE4}</ProjectGuid>
+    <OutputType>Library</OutputType>
+    <AppDesignerFolder>Properties</AppDesignerFolder>
+    <RootNamespace>Component.Buttlerfly.Logger</RootNamespace>
+    <AssemblyName>Component.Buttlerfly.Logger</AssemblyName>
+    <TargetFrameworkVersion>v4.5</TargetFrameworkVersion>
+    <FileAlignment>512</FileAlignment>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Debug|AnyCPU' ">
+    <DebugSymbols>true</DebugSymbols>
+    <DebugType>full</DebugType>
+    <Optimize>false</Optimize>
+    <OutputPath>bin\Debug\</OutputPath>
+    <DefineConstants>DEBUG;TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Release|AnyCPU' ">
+    <DebugType>pdbonly</DebugType>
+    <Optimize>true</Optimize>
+    <OutputPath>bin\Release\</OutputPath>
+    <DefineConstants>TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+  </PropertyGroup>
+  <ItemGroup>
+    <Reference Include="MySql.Data, Version=6.9.9.0, Culture=neutral, PublicKeyToken=c5687fc88969c44d, processorArchitecture=MSIL">
+      <SpecificVersion>False</SpecificVersion>
+      <HintPath>..\packages\MySql.Data.6.9.9\lib\net45\MySql.Data.dll</HintPath>
+    </Reference>
+    <Reference Include="System" />
+    <Reference Include="System.Configuration" />
+    <Reference Include="System.Core" />
+    <Reference Include="System.Runtime.Serialization" />
+    <Reference Include="System.Web" />
+    <Reference Include="System.Xml.Linq" />
+    <Reference Include="System.Data.DataSetExtensions" />
+    <Reference Include="Microsoft.CSharp" />
+    <Reference Include="System.Data" />
+    <Reference Include="System.Xml" />
+  </ItemGroup>
+  <ItemGroup>
+    <Compile Include="01Log\FileLoging.cs" />
+    <Compile Include="01Log\ILoging.cs" />
+    <Compile Include="01Log\LogBusiness.cs" />
+    <Compile Include="01Log\Logging.cs" />
+    <Compile Include="01Log\LogingThread.cs" />
+    <Compile Include="01Log\LogManager.cs" />
+    <Compile Include="02Factory\AppKeySettings.cs" />
+    <Compile Include="02Factory\ConfigMonitor.cs" />
+    <Compile Include="02Factory\ConnectionFactory.cs" />
+    <Compile Include="02Factory\DALFactory.cs" />
+    <Compile Include="03MySQLDAL\DMAppException.cs" />
+    <Compile Include="04FileDAL\TMAppException.cs" />
+    <Compile Include="05IDAL\IMAppException.cs" />
+    <Compile Include="06Helper\FileHelper.cs" />
+    <Compile Include="06Helper\IPAddressHelper.cs" />
+    <Compile Include="06Helper\JsonHelper.cs" />
+    <Compile Include="07Model\ExceptionLevel.cs" />
+    <Compile Include="07Model\MAppException.cs" />
+    <Compile Include="07Model\MInteractionParam.cs" />
+    <Compile Include="08TextAccess\TextDataAccess.cs" />
+    <Compile Include="09VModel\AppException.cs" />
+    <Compile Include="09VModel\GlobalLog.cs" />
+    <Compile Include="09VModel\LogType.cs" />
+    <Compile Include="Properties\AssemblyInfo.cs" />
+    <Compile Include="TrackID.cs" />
+    <Compile Include="TrackIDManager.cs" />
+  </ItemGroup>
+  <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
+  <!-- To modify your build process, add your task inside one of the targets below and uncomment it. 
+       Other similar extension points exist, see Microsoft.Common.targets.
+  <Target Name="BeforeBuild">
+  </Target>
+  <Target Name="AfterBuild">
+  </Target>
+  -->
+</Project>
